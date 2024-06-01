@@ -9,3 +9,4 @@
 /Users/christian/Documents/DataStrucsAlgo/MyLibrary/MyDataStructures/obj/Debug/net8.0/refint/MyDataStructures.dll
 /Users/christian/Documents/DataStrucsAlgo/MyLibrary/MyDataStructures/obj/Debug/net8.0/MyDataStructures.pdb
 /Users/christian/Documents/DataStrucsAlgo/MyLibrary/MyDataStructures/obj/Debug/net8.0/ref/MyDataStructures.dll
+/Users/christian/Documents/DataStrucsAlgo/MyLibrary/MyDataStructures/obj/Debug/net8.0/MyDataStructures.sourcelink.json

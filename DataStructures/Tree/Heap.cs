@@ -3,7 +3,7 @@ namespace MyDataStructures;
 public class Heap<T> where T : IComparable<T>
 {
     private List<T> _list;
-    private int Size { get; private set; }
+    private int Size { get; set; }
     public bool IsEmpty => Size == 0;
 
     public Heap()
@@ -21,7 +21,7 @@ public class Heap<T> where T : IComparable<T>
     public T ExtractMax()
     {
         T value = _list[0];
-        _list[0] = list[Size-1]
+        _list[0] = _list[Size-1];
         _list.RemoveAt(Size-1);
         Size--;
         if (Size > 0)
@@ -31,7 +31,7 @@ public class Heap<T> where T : IComparable<T>
         return value;
     }
 
-    private HeapifyUp(int index)
+    private void HeapifyUp(int index)
     {
         while (index > 0)
         {
@@ -40,13 +40,13 @@ public class Heap<T> where T : IComparable<T>
 
             T temp = _list[index];
             _list[index] = _list[parent];
-            _list[(parent] = temp;
+            _list[parent] = temp;
 
             index = parent;
         }
     }
 
-    private HeapifyDown(int index)
+    private void HeapifyDown(int index)
     {
         while (index < Size)
         {
